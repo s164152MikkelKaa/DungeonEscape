@@ -74,8 +74,6 @@
                     WriteWithIndentation("Ryk din karakter: Op Ned Venstre Højre", true);
                     WriteWithIndentation("Til menuen (giv op): Menu", true);
                     WriteWithIndentation("Afslut programmet: Afslut", true);
-                    // Removes the "Unrecogniced input handeling" after a valid input is given.
-                    RemoveUserInput(" ", "                        "); // The message part is 24 characters long.
                     // Sets the flag for read inputs.
                     watingForInput = true;
                     while (watingForInput)
@@ -101,6 +99,8 @@
                                     // Perform move.
                                     pCurY--;
                                     watingForInput = false;
+                                    // Removes the "Unrecogniced input handeling" after a valid input is given.
+                                    RemoveUserInput(tempInputRead, "                        "); // The message part is 24 characters long.
                                 } else {
                                     // Can't move to that square.
                                     RemoveUserInput(tempInputRead, "Kan ikke gå den vej.    "); // The message is 24 characters long.
@@ -111,6 +111,8 @@
                                     // Perform move.
                                     pCurY++;
                                     watingForInput = false;
+                                    // Removes the "Unrecogniced input handeling" after a valid input is given.
+                                    RemoveUserInput(tempInputRead, "                        "); // The message part is 24 characters long.
                                 } else {
                                     // Can't move to that square.
                                     RemoveUserInput(tempInputRead, "Kan ikke gå den vej.    "); // The message is 24 characters long.
@@ -121,6 +123,8 @@
                                     // Perform move.
                                     pCurX--;
                                     watingForInput = false;
+                                    // Removes the "Unrecogniced input handeling" after a valid input is given.
+                                    RemoveUserInput(tempInputRead, "                        "); // The message part is 24 characters long.
                                 } else {
                                     // Can't move to that square.
                                     RemoveUserInput(tempInputRead, "Kan ikke gå den vej.    "); // The message is 24 characters long.
@@ -131,6 +135,8 @@
                                     // Perform move.
                                     pCurX++;
                                     watingForInput = false;
+                                    // Removes the "Unrecogniced input handeling" after a valid input is given.
+                                    RemoveUserInput(tempInputRead, "                        "); // The message part is 24 characters long.
                                 } else {
                                     // Can't move to that square.
                                     RemoveUserInput(tempInputRead, "Kan ikke gå den vej.    "); // The message is 24 characters long.
